@@ -13,6 +13,20 @@ export default class App extends Component
   {
     alert(Num);
   }
+
+
+constructor(props)
+{
+  super(props);
+  this.state={Num1:''};
+}
+
+F1=()=>
+{
+  var N1=this.state.Num1;
+  alert(N1);
+}
+
   render(){
     return(
       <View>
@@ -51,6 +65,14 @@ export default class App extends Component
         <TextInput style={{borderWidth:1,borderColor:'red',margin:10,borderRadius:10}} defaultValue='1001' ></TextInput>
         <TextInput style={{borderWidth:1,borderColor:'red',margin:10 }}></TextInput>
 
+
+
+
+{/* getvalue text input */}
+
+        
+        <TextInput style={{borderWidth:1,margin:10}} onChangeText={Num1=>this.setState({Num1 })} ></TextInput>
+        <Button title="Click Me" style={{margin:10}} onPress={this.F1}></Button>
       </View>
     );
   }
