@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {View,Text} from 'react-native';
+import {View,Text,Button,TextInput} from 'react-native';
 
 export default class App extends Component
 {
@@ -25,7 +25,7 @@ export default class App extends Component
           <Text style={{fontWeight:'bold '}}>HTML</Text>
           <Text style={{fontStyle:'italic'}}>JAVA SCRIPT</Text>
           <Text style={{textAlign:'center'}}>Welcome</Text>
-          <Text style={{lineHeight:70}}>Welcome</Text>
+          <Text style ={{lineHeight:70}}>Welcome</Text>
           <Text style={{letterSpacing:20}}>Welcome to React native course</Text>
 
 
@@ -34,6 +34,22 @@ export default class App extends Component
 
           <Button title='Button2'onPress={this.show1.bind(this,"Ishan")}></Button>
 
+        {/* Text Input */}
+
+        <TextInput style={{borderWidth:1,borderColor:'red',margin:10,borderRadius:10,backgroundColor:'pink',color:'black'}} ></TextInput>
+        {/*Add number of lines */}
+        <TextInput style={{borderWidth:1,borderColor:'red',margin:10,borderRadius:10}} multiline={true} numberOfLines={5}></TextInput>
+
+        {/* add password field */}
+        <TextInput style={{borderWidth:1,borderColor:'red',margin:10,borderRadius:10}} secureTextEntry={true} ></TextInput> 
+        {/* keyboard type */}
+        <TextInput style={{borderWidth:1,borderColor:'red',margin:10,borderRadius:10}} keyboardType='number-pad' ></TextInput>
+        <TextInput style={{borderWidth:1,borderColor:'red',margin:10,borderRadius:10}} defaultValue='1001' editable={false} ></TextInput>
+        <TextInput style={{borderWidth:1,borderColor:'red',margin:10,borderRadius:10}} maxLength={5} ></TextInput>
+        <TextInput style={{borderWidth:1,borderColor:'red',margin:10,borderRadius:10}} value='same as defaultvalue' ></TextInput>
+        <TextInput style={{borderWidth:1,borderColor:'red',margin:10}} placeholder='Enter your Name'  placeholderTextColor='red'></TextInput>
+        <TextInput style={{borderWidth:1,borderColor:'red',margin:10,borderRadius:10}} defaultValue='1001' ></TextInput>
+        <TextInput style={{borderWidth:1,borderColor:'red',margin:10 }}></TextInput>
 
       </View>
     );
