@@ -7,6 +7,14 @@ export default class App extends Component
     return(
       <View>
           <Text>screen new </Text>
+          <Text style={{backgroundColor:'#ff0000'}}>React</Text>
+          <Text style={{color:'red'}}>Android</Text>
+          <Text style={{fontSize:30}}>PHP</Text>
+          <Text style={{fontWeight:'bold '}}>HTML</Text>
+          <Text style={{fontStyle:'italic'}}>JAVA SCRIPT</Text>
+          <Text style={{textAlign:'center'}}>Welcome</Text>
+          <Text style={{lineHeight:70}}>Welcome</Text>
+          <Text style={{letterSpacing:20}}>Welcome to React native course</Text>
       </View>
     );
   }
