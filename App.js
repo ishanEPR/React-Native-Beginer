@@ -8,6 +8,11 @@ export default class App extends Component
 
     alert('Welcome Ishan');
   }
+
+  show1=(Num)=>
+  {
+    alert(Num);
+  }
   render(){
     return(
       <View>
@@ -26,6 +31,8 @@ export default class App extends Component
 
           {/* Button component */}
           <Button title='Button1' onPress={this.show}></Button>
+
+          <Button title='Button2'onPress={this.show1.bind(this,"Ishan")}></Button>
 
 
       </View>
