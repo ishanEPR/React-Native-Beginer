@@ -3,9 +3,16 @@ import {View,Text} from 'react-native';
 
 export default class App extends Component
 {
+  show=()=>
+  {
+
+    alert('Welcome Ishan');
+  }
   render(){
     return(
       <View>
+
+       {/* text component  */}
           <Text>screen new </Text>
           <Text style={{backgroundColor:'#ff0000'}}>React</Text>
           <Text style={{color:'red'}}>Android</Text>
@@ -15,6 +22,12 @@ export default class App extends Component
           <Text style={{textAlign:'center'}}>Welcome</Text>
           <Text style={{lineHeight:70}}>Welcome</Text>
           <Text style={{letterSpacing:20}}>Welcome to React native course</Text>
+
+
+          {/* Button component */}
+          <Button title='Button1' onPress={this.show}></Button>
+
+
       </View>
     );
   }
