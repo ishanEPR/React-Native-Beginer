@@ -3,13 +3,13 @@ import {View,Text,Button,TextInput} from 'react-native';
 
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
-import S1 from './Screen1';
-import S2 from './Screen2';
+import S1 from './Screen3';
+import S2 from './Screen4';
 
 const App=createStackNavigator(
 {
-  S1:{screen1:S1},
-  S2:{screen2:S2},
+  S3:{screen:screen3},
+  S4:{screen:screen4},
 }
 );
 
