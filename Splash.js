@@ -7,6 +7,14 @@ var logo=require('./logo.jpg');
 
 export default Splash extends Component
 {
+
+    constructor(props)
+    {
+        super(props);
+        setTimeout(() => {
+            this.props.navigation.navigate('Login');
+        }, 5000);
+    }
     render()
     {
         return(
